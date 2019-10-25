@@ -16,8 +16,6 @@ class MainPage extends React.Component {
   }
 
   goPage(page) {
-    console.log(this.props)
-    console.log(this.state)
     nextPage(page)
   }
 
