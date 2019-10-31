@@ -2,21 +2,23 @@ import React from 'react';
 import './MainPage.scss';
 import MainButtons from '../MainButtons/MainButtons';
 import { nextPage } from '../../redux/actions/mainPage';
-import { withRouter } from 'react-router-dom'
-import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class MainPage extends React.Component {
   constructor (props) {
-    super(props)
+    super(props);
 
     this.state = {
       currentPage: 'mainPage',
-      nextPage: ''
-    }
+      nextPage: '',
+    };
   }
 
   goPage(page) {
-    nextPage(page)
+    const { nextPage } = this.props;
+
+    nextPage(page);
   }
 
   renderSelectComponet() {
