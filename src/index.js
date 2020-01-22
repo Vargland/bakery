@@ -5,7 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import { Provider } from "react-redux";
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
-import configureStore from './redux/configureStore'
+import configureStore from './redux/store'
 
 ReactDOM.render(
   <Provider store={ configureStore() }>
