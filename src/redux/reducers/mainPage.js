@@ -1,5 +1,5 @@
 const initialState = {
-  current_page: '',
+  current_page: '/',
   next_page: '',
 };
 
