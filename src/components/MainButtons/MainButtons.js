@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, withRouter } from 'react-router-dom'
 import './MainButton.scss';
 
 
@@ -14,7 +15,7 @@ class MainButtons extends React.Component {
   renderButtons() {
     return (
      <div className="main_buttons">
-       <a onClick={ () => this.props.goPage(this.props.srcPage) }> { this.props.label } </a>
+       <Link to={ this.props.srcPage } onClick={ () => this.props.goPage(this.props.srcPage) }> { this.props.label } </Link>
      </div>
     )
   }
