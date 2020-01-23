@@ -9,7 +9,7 @@ import React from 'react';
 class MainPage extends React.Component {
   constructor (props) {
     super(props);
-    console.log(PAGE.INGREDIENTS)
+
     this.state = {
       currentPage: 'mainPage',
       nextPage: '',

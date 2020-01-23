@@ -1,4 +1,12 @@
-.material_container {
-  height: 30%;
-  background-color: red;
+.material {
+  &_container {
+    border-bottom: 1px solid grey;
+    display: flex;
+    height: 10%;
+    padding: 1em;
+  }
+
+  &_grid {
+    display: flex;
+  }
 }

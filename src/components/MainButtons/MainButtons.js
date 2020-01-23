@@ -5,7 +5,8 @@ import './MainButton.scss';
 
 class MainButtons extends React.Component {
   constructor(props) {
-    super(props) 
+    super(props)
+
     this.state = {
       currentPage: 'MainPage',
       nextPage: ''

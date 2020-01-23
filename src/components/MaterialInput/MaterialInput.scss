@@ -1,0 +1,39 @@
+.input {
+  &__container {
+    display: inline-flex;
+  }
+
+  &__minimal {
+    &_unit {
+      width: 10em;
+    }
+
+    &_quantity{
+      width: 6rem;
+    }
+  }
+
+  &__package {
+    padding-right: 1em;
+
+    &_brand {
+      width: 18%;
+    }
+
+    &_name {
+      width: 18%;
+    }
+
+    &_price {
+      width: 7rem;
+    }
+
+    &_unit {
+      width: 10rem;
+    }
+
+    &_quantity{
+      width: 6rem;
+    }
+  }
+}
