@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
 import { Navigation } from '../Navigation/Navigation'
-import React from 'react'
+
 import MainPage from '../MainPage/MainPage'
 import Materials from '../Materials/Materials'
+import React from 'react'
 
 function AppRouter() {
   return (
@@ -15,4 +16,4 @@ function AppRouter() {
   )
 }
 
-export default AppRouter;
+export default AppRouter

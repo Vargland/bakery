@@ -1,10 +1,12 @@
-import './MainPage.scss';
+import { connect } from 'react-redux'
 import { LABEL, PAGE } from '../../constants/constants'
-import { connect } from 'react-redux';
-import { nextPage } from '../../redux/actions/mainPage';
-import { withRouter } from 'react-router-dom';
-import MainButtons from '../MainButtons/MainButtons';
-import React from 'react';
+import { nextPage } from '../../redux/actions/mainPage'
+import { withRouter } from 'react-router-dom'
+
+import React from 'react'
+import MainButtons from '../MainButtons/MainButtons'
+
+import './MainPage.scss'
 
 class MainPage extends React.Component {
   constructor (props) {
@@ -12,7 +14,7 @@ class MainPage extends React.Component {
 
     this.state = {
       currentPage: 'mainPage',
-      nextPage: '',
+      nextPage: ''
     };
   }
 
@@ -25,11 +27,11 @@ class MainPage extends React.Component {
   renderSelectComponet() {
     return (
       <div className="select">
-        <div className="select_ingredients"> 
-          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MATERIALS} label={LABEL.MATERIALS}></MainButtons>
+        <div className="select__materials"> 
+          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MATERIALS} label={LABEL.MATERIALS} />
         </div>
-        <div className="select_recipes">
-          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.RECIPES} label={LABEL.RECIPES}></MainButtons>
+        <div className="select__recipes">
+          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.RECIPES} label={LABEL.RECIPES} />
         </div>
       </div>
     )

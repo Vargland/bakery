@@ -1,6 +1,8 @@
-.main_buttons {
-  cursor: pointer;
-  padding: 1em;
-  position: relative;
-  width: 33%;
+.main {
+  &__button {
+    cursor: pointer;
+    padding: 1em;
+    position: relative;
+    width: 33%;
+  }
 }

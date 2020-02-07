@@ -1,13 +1,12 @@
-import React from 'react';
-import { InputAdornment, MenuItem, TextField } from '@material-ui/core';
-import { connect } from 'react-redux';
-import { submitMaterials } from '../../redux/actions/materialInput';
-import { withRouter } from 'react-router-dom';
-import AttachMoneyTwoToneIcon from '@material-ui/icons/AttachMoneyTwoTone';
-import AddBoxOutlinedIcon from '@material-ui/icons/AddBoxOutlined';
+import React from 'react'
+import { InputAdornment, MenuItem, TextField } from '@material-ui/core'
+import { connect } from 'react-redux'
+import { submitMaterials } from '../../redux/actions/materialInput'
+import { withRouter } from 'react-router-dom'
+import AttachMoneyTwoToneIcon from '@material-ui/icons/AttachMoneyTwoTone'
+import AddBoxOutlinedIcon from '@material-ui/icons/AddBoxOutlined'
 
 import './MaterialInput.scss'
-
 
 class MaterialInput extends React.Component {
   constructor(props) {

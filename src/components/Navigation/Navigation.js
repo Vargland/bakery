@@ -1,6 +1,7 @@
+import { Route } from 'react-router-dom'
+
 import React from 'react'
 import ReactGA from 'react-ga'
-import { Route } from 'react-router-dom'
 
 function trackPage (path) {
   ReactGA.set({ page: path })
