@@ -1,12 +1,15 @@
 .material {
-  &_container {
+  &__container {
     border-bottom: 1px solid grey;
     display: flex;
-    height: 10%;
-    padding: 1em;
+    padding: 1rem 0;
   }
 
-  &_grid {
+  &__grid {
     display: flex;
+  }
+
+  &__title{
+    align-self: center;
   }
 }

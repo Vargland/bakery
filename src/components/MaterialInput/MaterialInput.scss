@@ -1,39 +1,28 @@
 .input {
+  &__add-button {
+    align-self: center;
+    cursor: pointer;
+    &:hover {
+      color: green;
+    }
+  }
+
   &__container {
-    display: inline-flex;
+    display: flex;
+    width: 100%;
   }
 
   &__minimal {
-    &_unit {
-      width: 10em;
-    }
-
-    &_quantity{
-      width: 6rem;
-    }
+    display: grid;
+    grid-template-columns: 7rem 10rem auto;
+    grid-template-rows: auto;
+    padding-right: 1rem;
   }
 
   &__package {
-    padding-right: 1em;
-
-    &_brand {
-      width: 18%;
-    }
-
-    &_name {
-      width: 18%;
-    }
-
-    &_price {
-      width: 7rem;
-    }
-
-    &_unit {
-      width: 10rem;
-    }
-
-    &_quantity{
-      width: 6rem;
-    }
+    display: grid;
+    grid-template-columns: 10rem 10rem 7rem 10rem 7rem;
+    grid-template-rows: auto;
+    padding-right: 1rem;
   }
 }

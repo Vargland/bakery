@@ -15,11 +15,11 @@ class Materials extends React.Component {
 
   materialComponent() {
     return (
-      <div className='material_container'>
-        <div className='material_title'>
+      <div className='material__container'>
+        <div className='material__title'>
           <i> Agregar Ingrediente </i>
         </div>
-        <Grid className="material_grid" item xs={12}>
+        <Grid className="material__grid" item xs={12}>
          <MaterialInput></MaterialInput>
         </Grid>
       </div>

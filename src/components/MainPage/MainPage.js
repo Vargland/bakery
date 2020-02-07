@@ -47,10 +47,3 @@ const mapDispatchToProps = dispatch => ({
 const mapStateToProps = state => ({ ...state })
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(MainPage))
- 
- /** MAY THIS BUTTONS ARE NOT NECESSARY --> COULD BE MODIFY ON THE ADD/VIEW LIST //
-  <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.ADD_INGREDIENTS} label={'Add'}></MainButtons>
-  <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.VIEW_RECIPE} label={'View'}></MainButtons>
-  <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MODIFY_INGREDIENTS} label={'Modify'}></MainButtons> 
-  <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MODIFY_RECIPE} label={'Modify'}></MainButtons>
-*/
