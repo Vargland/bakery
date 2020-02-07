@@ -1,0 +1,15 @@
+.material {
+  &__container {
+    border-bottom: 1px solid grey;
+    display: flex;
+    padding: 1rem 0;
+  }
+
+  &__grid {
+    display: flex;
+  }
+
+  &__title{
+    align-self: center;
+  }
+}
