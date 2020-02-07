@@ -1,7 +1,8 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
-import './MainButton.scss';
 
+import React from 'react'
+
+import './MainButton.scss'
 
 class MainButtons extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class MainButtons extends React.Component {
 
   renderButtons() {
     return (
-     <div className="main_buttons">
+     <div className="main__button">
        <Link to={ this.props.srcPage } onClick={ () => this.props.goPage(this.props.srcPage) }> { this.props.label } </Link>
      </div>
     )
@@ -26,4 +27,4 @@ class MainButtons extends React.Component {
   }
 }
 
-export default MainButtons;
+export default MainButtons

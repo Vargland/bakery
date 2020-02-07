@@ -1,7 +1,8 @@
-import React from 'react'
-import Grid from '@material-ui/core/Grid';
-import './Materials.scss'
+import Grid from '@material-ui/core/Grid'
 import MaterialInput from '../MaterialInput/MaterialInput'
+import React from 'react'
+
+import './Materials.scss'
 
 class Materials extends React.Component {
   constructor(props) {
@@ -19,8 +20,8 @@ class Materials extends React.Component {
         <div className='material__title'>
           <i> Agregar Ingrediente </i>
         </div>
-        <Grid className="material__grid" item xs={12}>
-         <MaterialInput></MaterialInput>
+        <Grid className="material_grid" item xs={12}>
+         <MaterialInput />
         </Grid>
       </div>
     )
@@ -31,4 +32,4 @@ class Materials extends React.Component {
   }
 }
 
-export default Materials;
+export default Materials

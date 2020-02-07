@@ -10,7 +10,7 @@ const initialState = {
 
 export default function(state = initialState, action) {
   const material = action.payload;
-  console.log('material', material)
+
   switch (action.type) {
     case 'SUBMIT_MATERIALS': {
       return {

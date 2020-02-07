@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.scss';
-import Router from './components/Router/Router'; 
+import './App.scss'
 
+import React from 'react'
+import Router from './components/Router/Router'
 
 function App() {
   return (
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
