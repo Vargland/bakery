@@ -1,11 +1,11 @@
 import { combineReducers } from "redux"
 
 import mainPage from "./mainPage"
-import submitMaterials from './materialInput'
+import material from './material'
 
 const rootReducer = combineReducers({
   mainPage,
-  submitMaterials
+  material
 });
 
 export default rootReducer

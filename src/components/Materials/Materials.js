@@ -1,5 +1,6 @@
 import Grid from '@material-ui/core/Grid'
 import MaterialInput from '../MaterialInput/MaterialInput'
+import MaterialList from '../MaterialList/MaterialList'
 import React from 'react'
 
 import './Materials.scss'
@@ -17,12 +18,17 @@ class Materials extends React.Component {
   materialComponent() {
     return (
       <div className='material__container'>
-        <div className='material__title'>
-          <i> Agregar Ingrediente </i>
+        <div className='material__grid_container'>
+          <div className='material__grid_title'>
+            <i> Agregar Ingrediente </i>
+          </div>
+          <Grid className="material__grid" item xs={12}>
+          <MaterialInput />
+          </Grid>
         </div>
-        <Grid className="material_grid" item xs={12}>
-         <MaterialInput />
-        </Grid>
+        <div>
+          <MaterialList />
+        </div>
       </div>
     )
   }

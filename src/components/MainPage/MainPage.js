@@ -28,10 +28,10 @@ class MainPage extends React.Component {
     return (
       <div className="select">
         <div className="select__materials"> 
-          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MATERIALS} label={LABEL.MATERIALS} />
+          <MainButtons className="select__button" goPage={ this.goPage.bind(this) } srcPage={PAGE.MATERIALS} label={LABEL.MATERIALS} />
         </div>
         <div className="select__recipes">
-          <MainButtons className="select_button" goPage={ this.goPage.bind(this) } srcPage={PAGE.RECIPES} label={LABEL.RECIPES} />
+          <MainButtons className="select__button" goPage={ this.goPage.bind(this) } srcPage={PAGE.RECIPES} label={LABEL.RECIPES} />
         </div>
       </div>
     )

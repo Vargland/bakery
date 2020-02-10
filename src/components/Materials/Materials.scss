@@ -1,15 +1,18 @@
 .material {
   &__container {
     border-bottom: 1px solid grey;
-    display: flex;
     padding: 1rem 0;
+  }
+
+  &__grid_container {
+    display: flex;
   }
 
   &__grid {
     display: flex;
   }
 
-  &__title{
+  &__grid_title {
     align-self: center;
   }
 }
